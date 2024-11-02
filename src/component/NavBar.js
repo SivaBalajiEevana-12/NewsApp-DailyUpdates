@@ -4,6 +4,7 @@ import React from 'react'
 
 
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import Search from './Search';
 // import News from './News';
 
 export default function NavBar() {
@@ -11,7 +12,8 @@ export default function NavBar() {
   //wojtekmaj.pl
  
 const handleOnclick=(e)=>{
-  console.log(e.value);
+  let b=e.target.value;
+  <Search value={b}/>
 }
 
     return (

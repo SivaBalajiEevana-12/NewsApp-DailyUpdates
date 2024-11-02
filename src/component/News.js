@@ -2,6 +2,7 @@ import React, { useEffect,useState } from 'react'
 import NewsItem from './NewsItem'
 import Spinner from './Spinner'
 import PropTypes from 'prop-types'
+// import Search from './Search'
 // import InfiniteScroll from 'react-infinite-scroll-component';
 
 const News =(props)=> {
@@ -43,7 +44,7 @@ props.setProgress(100);
   }
 useEffect(()=>{
 updateNews();
-},[props.category])
+},[props.category] );
 
   // async componentDidMount() {
   //   // let url=`https://newsapi.org/v2/top-headlines?counry=us&category=${this.props.catogery}&apikey=5eff073b1e014bfe8d1a8b3f84e6a1e9&page=1&pageSize=12`;
@@ -122,10 +123,10 @@ updateNews();
           hasMore={this.state.articles.length !==this.state.totalResults}
           loader={<Spinner/>}
           > */}
-
+          {/* <Search arit={articles}/> */}
         <div className='row'>
         {articles.map((element) => {
-          return <div className='col-md-3 d-inline-block mx-5' key={element.url}>
+          return <div className='col-md-2 d-inline-block mx-3' key={element.url}>
             <NewsItem title={element.title === null ? element.title : element.title.slice(0, 50)} description={element.description === null ? element.description : element.description.slice(0, 50)} url={element.urlToImage}
               newsurl={element.url} author={element.author} date={element.publishedAt} name={element.source.id} />
               </div>

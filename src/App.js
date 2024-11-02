@@ -30,14 +30,14 @@ export default function App () {
         onLoaderFinished={() => setProgress(0)}
       />
           <Switch>
-            <Route exact path='/' key='general'><News setProgress={setProgress}country='in' catogery='general' pageSize='8' /></Route>
-            <Route exact path='/business' key='business'><News setProgress={setProgress}country='in' catogery='business' pageSize='8' /></Route>
-            <Route exact path='/science' key='science'><News setProgress={setProgress}country='in' catogery='science' pageSize='8' /></Route>
-            <Route exact path='/sports' key='sports'><News setProgress={setProgress}country='in' catogery='sports' pageSize='8' /></Route>
-            <Route exact path='/health' key='health'><News setProgress={setProgress}country='in' catogery='health' pageSize='8' /></Route>
-            <Route exact path='/technology' key='technology'><News setProgress={setProgress}country='in' catogery='technology' pageSize='8' /></Route>
-            <Route exact path='/entertainment' key='entertainment'><News setProgress={setProgress}country='in' catogery='entertainment' pageSize='8' /></Route>
-            <Route exact path='/general' key='general'><News setProgress={setProgress}country='in' catogery='general' pageSize='8' /></Route>
+            <Route exact path='/' key='general'><News setProgress={setProgress}country='in' catogery='general' pageSize='20' /></Route>
+            <Route exact path='/business' key='business'><News setProgress={setProgress}country='in' catogery='business' pageSize='20' /></Route>
+            <Route exact path='/science' key='science'><News setProgress={setProgress}country='in' catogery='science' pageSize='20' /></Route>
+            <Route exact path='/sports' key='sports'><News setProgress={setProgress}country='in' catogery='sports' pageSize='20' /></Route>
+            <Route exact path='/health' key='health'><News setProgress={setProgress}country='in' catogery='health' pageSize='20' /></Route>
+            <Route exact path='/technology' key='technology'><News setProgress={setProgress}country='in' catogery='technology' pageSize='20' /></Route>
+            <Route exact path='/entertainment' key='entertainment'><News setProgress={setProgress}country='in' catogery='entertainment' pageSize='20' /></Route>
+            <Route exact path='/general' key='general'><News setProgress={setProgress}country='in' catogery='general' pageSize='20' /></Route>
 
           </Switch>
         </Router>
