@@ -17,6 +17,7 @@ import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
 import LoadingBar from 'react-top-loading-bar';
 export default function App () {
   let [progress,setProgress]=useState(0);
+  console.log(progress);
 
  
     return (
@@ -30,7 +31,7 @@ export default function App () {
         onLoaderFinished={() => setProgress(0)}
       />
           <Switch>
-            <Route exact path='/' key='general'><News setProgress={setProgress}country='in' catogery='general' pageSize='20' /></Route>
+            <Route exact path='' key='general'><News setProgress={setProgress}country='in' catogery='general' pageSize='20' /></Route>
             <Route exact path='/business' key='business'><News setProgress={setProgress}country='in' catogery='business' pageSize='20' /></Route>
             <Route exact path='/science' key='science'><News setProgress={setProgress}country='in' catogery='science' pageSize='20' /></Route>
             <Route exact path='/sports' key='sports'><News setProgress={setProgress}country='in' catogery='sports' pageSize='20' /></Route>
